@@ -1,0 +1,1 @@
+!function(){"use strict";var r;(r=Number(prompt("Enter your age")))>18?alert("Приветствую"):r>5?alert("Привет"):alert("Агу")}();
