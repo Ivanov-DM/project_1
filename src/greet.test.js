@@ -16,9 +16,13 @@ describe('greet', () => {
         window.alert = alert;
     });
 
-    it ('shoud return Agu if small age', () => {
-        window.prompt.mockReturnValue('4');
-        greet();
+    it ('shoud show Agu for small age', () => {
+        greet(4);
         expect(window.alert).toHaveBeenCalledWith('Агу');
-    })
+    });
+
+    //it ('shoud show Privet for teen age', () => {
+    //    greet(14);
+    //    expect(window.alert).toHaveBeenCalledWith('Привет');
+    //})
 })
